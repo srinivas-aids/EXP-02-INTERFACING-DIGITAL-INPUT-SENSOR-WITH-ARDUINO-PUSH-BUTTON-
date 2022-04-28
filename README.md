@@ -67,6 +67,28 @@ FIGURE -03
 
 
 PROGRAM 
+~~~
+Developed by: u.srinivas
+RegisterNumber:  212221230108
+
+int buttonstate = 0;
+void setup()
+{
+    pinMode(2,OUTPUT);
+    pinMode(13, INPUT);
+    }
+   void loop()
+   {
+     buttonstate = digitalRead(13);
+     if(buttonstate==HIGH){
+       digitalWrite(2, HIGH);
+       }else{
+         digitalWrite(2, LOW);
+       }
+       delay(10);
+       }
+   
+   ~~~
  
  
  
@@ -76,6 +98,7 @@ PROGRAM
 
 
 Output of the simulation :
+![output](1.jpg)
 
-[My image](username.github.com/repository/img/image.jpg)
+Result: Thus the given circuit diagram is simulated in tinkercad
 
